@@ -33,4 +33,10 @@ class Api::EmployeesController < ApplicationController
     @employee.save
     render 'show.json.jb'
   end
+
+  def destroy
+    @employee = Employee.find_by(id: params[:id])
+    @employee.destroy
+    render 'destroy.json.jb'
+  end
 end
