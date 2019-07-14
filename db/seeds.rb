@@ -22,8 +22,8 @@
 #   job_title: "lawyer",
 #   department_id: 2)
 
-# Department.create(
-#   name: "IT",
-#   manager: 1,
-#   code: "50612")
+Department.create(
+  name: "Accounting",
+  manager: 2,
+  code: "90210")
 
